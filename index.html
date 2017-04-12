@@ -3,21 +3,72 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+	<style>
+		html{
+			font-family: 'Poppins', sans-serif;
+		}
+	</style>
+
 </head>
 <body>
+	<!--Example 1 innerHTML-->
 	<p id="test">Hello World</p>
 	<button type="button" onclick="document.getElementById('test').innerHTML = 'The world is' ">Submit</button>
 
+	<!--Example 2 Font Size-->
 	<p id="demo">This is a demo for size</p>
 	<button type="button" onclick="document.getElementById('demo').style.fontSize = '25px' ">Click Me</button>
 
+	<!--Example 3 Color-->
 	<p id="color">This will change the color</p>
 	<button onclick="document.getElementById('color').style.color ='red' ">Color Me</button>
 
+	<!--Example 4 Margin-->
 	<p id="left">I will move towards the left</p>
 	<button onclick="document.getElementById('left').style.marginLeft ='40px' ">Move Me Left</button>
 
+	<!--Example 5 Display-->
 	<p id="hide">Hide Me</p>
 	<button onclick="document.getElementById('hide').style.display = 'none' ">Hide and Seek</button>
+
+	<!--Example 6 Console Log-->
+	<p id="console">Console Log Me</p>
+	<button onclick="console.log(document.getElementById('console').innerHTML = 'you clicked me') ">Click Me</button>
+
+
+
+	<!--These Examples Are In The Script Below-->
+
+	<!--Variable Example-->
+	<p>What kind of car do I have?</p>
+	<p id="demo2"></p>
+
+	<!--Operator Example-->
+	<p>Do math for me</p>
+	<p id="test2"></p>
+
+
+	<script>
+
+	//Variable Example
+	var carName = 'Mazda';
+
+	document.getElementById('demo2').innerHTML = carName;
+
+	console.log(document.getElementById('demo2').innerHTML = carName);
+
+	//Operator Example
+	var x = 10;
+
+	x += 5;
+
+	document.getElementById('test2').innerHTML = x;
+
+	console.log(document.getElementById('test2').innerHTML = x); 
+	</script>
+
+
 </body>
 </html>
