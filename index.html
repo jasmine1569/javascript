@@ -3,11 +3,114 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 	<style>
 		html{
-			font-family: 'Poppins', sans-serif;
+			font-family: 'Roboto', sans-serif;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.red{
+			color: red;
+		}
+
+		h1,h2,h3,h4,h5,h6{
+			margin: 0px;
+			padding: 0px;
+			font-weight: 700;
+		}
+
+
+		h1{
+			font-size: 80px;
+		}
+		h2{
+			font-size: 70px;
+		}
+		h3{
+			font-size: 60px;
+		}
+		h4{
+			font-size: 50px;
+		}
+		h5{
+			font-size: 40px;
+		}
+		h6{
+			font-size: 30px;
+		}
+
+		p{
+			font-size: 16px;
+			line-height: 170%;
+			letter-spacing: 0.3px;
+		}
+
+		.p-style{
+			font-size: 18px;
+			line-height: 170%;
+			letter-spacing: 0.3px;
+			color: green;
+		}
+
+		.giga{
+			font-size: 170px;
+			font-weight: 100;
+			margin: 0px;
+			text-align: center;
+			padding: 200px;
+			color: white;
+		}
+
+		.kilo{
+			font-size: 600px;
+			color: #292D3E;
+			margin: 0px;
+		}
+
+		.team{
+			font-size: 400px;
+			color: #292D3E;
+			margin: 0px;
+			text-align: center;
+		}
+
+		.pull-left{
+			float: left;
+		}
+
+		.pull-right{
+			float: right;
+		}
+
+		.clear-left{
+			clear: left;
+		}
+
+		.clear-right{
+			clear: right;
+		}
+
+		.container{
+			width: 40%;
+			height: auto;
+			padding: 10px;
+		}
+
+		.container---2{
+			width: 100%;
+			height: auto;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.blah{
+			width: 1336px;
+			height: 6	35px;
+			background-color: #292D3E;
+			margin: auto;
+			display: block;
 		}
 	</style>
 
@@ -42,20 +145,81 @@
 	<!--These Examples Are In The Script Below-->
 
 	<!--Variable Example-->
-	<p>What kind of car do I have?</p>
-	<p id="demo2"></p>
+	<p style="color:red;" id="demo2">What kind of car do I have?</p>
+	<!-- <p id="demo2"></p> -->
 
 	<!--Operator Example-->
-	<p>Do math for me</p>
+	<p style="color:blue;">Do math for me</p>
 	<p id="test2"></p>
+
+	<!--Function Example-->
+	<p class="red">This example calls a function which performs a calculation and returns the result:</p>
+	<p id="demo5"></p>
+
+	<p class="red">This will say my Name</p>
+	<p id="demo6"></p>
+
+	<!--Object Example-->
+	<p class="red">This example talks about objects</p>
+	<p id="demo7"></p>
+
+	<p class="red">This example talks about objects using a function within inside</p>
+	<p id="demo8"></p>
+
+<!-- 	<h1>Hello World - 80px</h1>
+	<h2>Hello World - 70px</h2>
+	<h3>Hello World - 60px</h3>
+	<h4>Hello World - 50px</h4>
+	<h5>Hello World - 40px</h5>
+	<h6>Hello World - 30px</h6>
+
+
+	<div class="container pull-left">
+		<br>
+		<br>
+		<h6>Paragrah with font size 16px</h6>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quibusdam distinctio, cum nesciunt sed at maxime id deleniti, reiciendis illo! Error quidem saepe aperiam delectus deleniti, porro velit! Commodi, eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, molestias sint doloribus fugit, velit nobis dolorum modi iure, ex dolores ullam facere tempore asperiores possimus iusto rerum dignissimos explicabo unde!
+
+		<br>
+		<br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatem id minima voluptatibus maxime vitae, esse totam laborum explicabo est! Aspernatur quasi facere praesentium vero, reiciendis ipsa aliquid enim non!
+
+		<br>
+		<br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aperiam eius, debitis, alias perferendis unde. Sequi tempora ullam cumque, non porro alias aut pariatur quas, hic iusto earum dolorem dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus aliquid consectetur, vitae in aut nihil quae repellat facilis ea fugit quam asperiores pariatur qui, fuga sequi delectus beatae laboriosam rem.
+		</p>
+	</div>
+
+	<div class="container pull-left">
+		<br>
+		<br>
+		<h6>Paragrah with font size 18px</h6>
+		<p class="p-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quibusdam distinctio, cum nesciunt sed at maxime id deleniti, reiciendis illo! Error quidem saepe aperiam delectus deleniti, porro velit! Commodi, eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, molestias sint doloribus fugit, velit nobis dolorum modi iure, ex dolores ullam facere tempore asperiores possimus iusto rerum dignissimos explicabo unde!
+
+		<br>
+		<br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatem id minima voluptatibus maxime vitae, esse totam laborum explicabo est! Aspernatur quasi facere praesentium vero, reiciendis ipsa aliquid enim non!
+
+		<br>
+		<br>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aperiam eius, debitis, alias perferendis unde. Sequi tempora ullam cumque, non porro alias aut pariatur quas, hic iusto earum dolorem dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus aliquid consectetur, vitae in aut nihil quae repellat facilis ea fugit quam asperiores pariatur qui, fuga sequi delectus beatae laboriosam rem.
+		</p>
+	</div> -->
+
+
+<!-- 	<div class="blah">
+		<h1 class="giga">PROGRAMS</h1>
+	</div> -->
+
+<!-- 	<h1 class="kilo">M</h1>
+	<h1 class="team">TEAM</h1> -->
+
 
 
 	<script>
 
 	//Variable Example
 	var carName = 'Mazda';
-
-	document.getElementById('demo2').innerHTML = carName;
 
 	console.log(document.getElementById('demo2').innerHTML = carName);
 
@@ -64,9 +228,55 @@
 
 	x += 5;
 
-	document.getElementById('test2').innerHTML = x;
-
 	console.log(document.getElementById('test2').innerHTML = x); 
+
+	//Function Example
+	var x = myFunction(15,20)
+
+	function myFunction(a,b) {
+		return a + b;
+	}
+
+	document.getElementById('demo5').innerHTML = myFunction(15,20);
+
+	//Function Example
+
+	function myName( name ) {
+
+		return name + ' Beeman ';
+	}
+
+	document.getElementById('demo6').innerHTML = myName(' Jasmine ');
+
+	//Object Example
+	var person = {
+		firstName: 'John',
+		lastName: 'Doe',
+		age: 50,
+		eyeColor: 'blue'
+	};
+
+	document.getElementById('demo7').innerHTML = person.firstName + ' is ' + person.age + ' years old. ';
+
+	var personB = {
+		firstName: 'John',
+		lastName: 'Doe',
+		id: '5566',
+		fullName: function () {
+			return this.firstName + ' ' + this.lastName;
+		}
+	};
+
+	document.getElementById('demo8').innerHTML = personB.fullName();
+
+	//Common HTML Events List
+	//onchange
+	//onclick
+	//onmouseover
+	//onmouseout
+	//onkeydown
+	//onload
+
 	</script>
 
 
